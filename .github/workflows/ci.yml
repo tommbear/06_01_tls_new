@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: download cert openssl
-      - run: sudo apt install -y libssl-dev
+        run: sudo apt install -y libssl-dev
       - name: Create cert openssl
         run: openssl req -nodes -new -x509 -keyout private.key -out cert.crt -subj "/C=RU/ST=Moscow/L=Moscow/O=Codeby/OU=School/CN=codeby.local"
       - name: Checkout Code
