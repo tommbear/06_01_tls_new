@@ -13,7 +13,7 @@ jobs:
       - name: download cert openssl
       - run: sudo apt install -y libssl-dev
       - name: Create cert openssl
-        run: openssl req -nodes -new -x509 -keyout private.key -out cert.crt -subj "/C=RU/ST=Moscow/L=Moscow/O=Codeby/OU=School/CN=codeby.local
+        run: openssl req -nodes -new -x509 -keyout private.key -out cert.crt -subj "/C=RU/ST=Moscow/L=Moscow/O=Codeby/OU=School/CN=codeby.local"
       - name: Checkout Code
         uses: actions/checkout@v3
       - name: Build Binary
